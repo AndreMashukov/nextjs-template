@@ -1,67 +1,70 @@
-
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/styles';
-import Link from 'next/link';
-import { createMuiTheme } from '@material-ui/core/styles';
-// --- Post bootstrap -----
 import React from 'react';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
-const theme = createMuiTheme();
+import { makeStyles } from '@material-ui/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles({
   root: {
-    paddingTop: theme.spacing(20),
-    textAlign: 'center'
+    display: 'flex',
+    height: '100vh',
+    width: '100vw',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  card: {
+    width: 275
+  },
+  bullet: {
+    display: 'inline-block',
+    margin: '0 2px',
+    transform: 'scale(0.8)'
+  },
+  title: {
+    fontSize: 14
+  },
+  pos: {
+    marginBottom: 12
   }
-}));
+});
 
-function Index() {
-  const classes = useStyles({});
-  const [open, setState] = React.useState(false);
-
-  const handleClose = () => {
-    setState(false);
-  };
-  const handleClick = () => {
-    setState(true);
-  };
-
+export default () => {
+  const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
   return (
     <div className={classes.root}>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Model launched!</DialogTitle>
-        <DialogContent>
-          <DialogContentText>Modal</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button color="primary" onClick={handleClose}>
-            OK
-          </Button>
-        </DialogActions>
-      </Dialog>
-      <Typography variant="h4" gutterBottom>
-        NextJS Template
-      </Typography>
-      <Typography variant="subtitle1" gutterBottom>
-        NextJS, Material-UI & TypeScript
-      </Typography>
-      <Typography gutterBottom>
-        <Link href="/about">
-          <a>Go to the about page</a>
-        </Link>
-      </Typography>
-      <Button variant="contained" color="secondary" onClick={handleClick}>
-        Show me the Modal!
-      </Button>
+      <Card className={classes.card}>
+        <CardContent>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Word of the Day
+          </Typography>
+          <Typography variant="h5" component="h2">
+            be
+            {bull}
+            nev
+            {bull}o{bull}
+            lent
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            adjective
+          </Typography>
+          <Typography component="p">
+            well meaning and kindly.
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
     </div>
   );
-}
-
-export default Index;
+};
