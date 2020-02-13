@@ -1,0 +1,1 @@
+# Template for creating NextJS apps with Typescript and Material UI 
