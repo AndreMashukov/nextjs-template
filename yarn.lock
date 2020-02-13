@@ -986,6 +986,13 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
+"@types/jss@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@types/jss/-/jss-10.0.0.tgz#bea379e2b64d0f0f0f9e9093471036643608c676"
+  integrity sha512-Obo9w999hf2Q4sU/MRT7iR1UazdvFK3pEdtB6BSfO0NbmDrVMQi+RgNts4DLmlFho5Uf1PG4cMKLT8POhb6utA==
+  dependencies:
+    jss "*"
+
 "@types/next@^9.0.0":
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/@types/next/-/next-9.0.0.tgz#29aca06f8a5cfffc974a83b87e52ca57b2a506c4"
@@ -3401,7 +3408,7 @@ jss-plugin-vendor-prefixer@^10.0.3:
     css-vendor "^2.0.7"
     jss "10.0.4"
 
-jss@10.0.4, jss@^10.0.3, jss@^10.0.4:
+jss@*, jss@10.0.4, jss@^10.0.3, jss@^10.0.4:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/jss/-/jss-10.0.4.tgz#46ebdde1c40c9a079d64f3334cb88ae28fd90bfd"
   integrity sha512-GqHmeDK83qbqMAVjxyPfN1qJVTKZne533a9bdCrllZukUM8npG/k+JumEPI86IIB5ifaZAHG2HAsUziyxOiooQ==
