@@ -9,11 +9,15 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/styles';
 import Link from 'next/link';
+import { createMuiTheme } from '@material-ui/core/styles';
 // --- Post bootstrap -----
 import React from 'react';
 
+const theme = createMuiTheme();
+
 const useStyles = makeStyles(() => ({
   root: {
+    paddingTop: theme.spacing(20),
     textAlign: 'center'
   }
 }));
