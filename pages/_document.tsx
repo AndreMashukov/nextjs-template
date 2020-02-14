@@ -8,7 +8,8 @@ class MyDocument extends Document<{
 
   // tslint:disable-next-line: no-any
   static async getInitialProps(ctx: any) {
-    // Render app and page and get the context of the page with collected side effects.
+    // Render app and page and get the context
+    // of the page with collected side effects.
     // tslint:disable-next-line: no-any
     let pageContext: MaterialPageContext = null as any;
     // tslint:disable-next-line: no-any
