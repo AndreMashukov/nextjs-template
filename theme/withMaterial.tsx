@@ -6,7 +6,7 @@ import initPageContext, { MaterialPageContext } from './initPageContext';
 
 // withMaterial wraps <App> in the Material UI Theme and Styles providers.
 
-// noStylesGeneration prop is optional - but handy if using eg apollo's getDataFromTree, 
+// noStylesGeneration prop is optional - but handy if using eg apollo's getDataFromTree,
 // where it can be passed in app props.
 // Setting to true speeds up processing as sheets are not made.
 export interface Props {

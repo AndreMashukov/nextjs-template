@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import Store from '../store/Store';
+import { NavBar } from '../shared';
 
 const useStyles = makeStyles({
   root: {
     display: 'flex',
-    height: '100vh',
+    // height: '100vh',
     width: '100vw',
     justifyContent: 'center',
     alignItems: 'center'
@@ -31,6 +32,7 @@ export default () => {
   return (
     <div className={classes.root}>
       <Store>
+        <NavBar/>
       </Store>
     </div>
   );
