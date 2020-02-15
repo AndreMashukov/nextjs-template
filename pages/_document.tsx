@@ -1,4 +1,4 @@
-import { MaterialPageContext } from '../lib/initPageContext';
+import { MaterialPageContext } from '../theme/initPageContext';
 import Document, { Head, Main, NextScript } from 'next/document';
 import React from 'react';
 

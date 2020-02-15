@@ -1,7 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import AppComponentProps from 'next/app';
-import withMaterial, { MaterialAppComponentProps } from '../lib/withMaterial';
+import withMaterial, { MaterialAppComponentProps } from '../theme/withMaterial';
 
 interface Props extends AppComponentProps, MaterialAppComponentProps {}
 

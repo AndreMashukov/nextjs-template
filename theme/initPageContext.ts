@@ -1,6 +1,6 @@
 import { Theme } from '@material-ui/core/styles';
 import { ServerStyleSheets } from '@material-ui/styles';
-import theme from '../theme/theme';
+import theme from './theme';
 
 export interface MaterialPageContext {
   theme: Theme;
