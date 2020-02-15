@@ -1,5 +1,8 @@
 import React from 'react';
-import { AppBar, Grid, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Grid, Toolbar } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import HomeIcon from '@material-ui/icons/Home';
 import { CATEGORIES } from '../../global-definitions';
 import './NavBar.scss';
 
@@ -20,12 +23,16 @@ export const NavBar = class extends React.Component {
       <AppBar position="static">
         <Toolbar>
           <div className="navbar-layout">
-            <Grid container direction="row" justify="flex-start" alignItems="flex-start" spacing={2}>
+            <Grid container direction="row" justify="space-between" alignItems="flex-start" spacing={2}>
               <Grid item>
-                <Typography variant="h6">Home</Typography>
+                <IconButton aria-label="home" color="inherit">
+                  <HomeIcon />
+                </IconButton>
               </Grid>
               <Grid item>
-                <Typography variant="h6">Cart</Typography>
+                <IconButton aria-label="home" color="inherit">
+                  <ShoppingCartIcon />
+                </IconButton>
               </Grid>
             </Grid>
           </div>
