@@ -1,11 +1,3 @@
-@import '../../styles/mixins';
-
-.home-layout {
-  @include layout;
-  padding: 20px 0 10px 0;
-  height: calc(100vh - 120px);
-}
-
 .card-root {
   display: flex;
   justify-content: flex-start;

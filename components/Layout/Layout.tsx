@@ -20,7 +20,9 @@ export const PageLayout = class extends React.Component<Props> {
   render() {
     return (
       <div className={this.props.classes.root}>
-        {this.props.children}
+        <div className="root-layout">
+          {this.props.children}
+        </div>
       </div>
     );
   }
