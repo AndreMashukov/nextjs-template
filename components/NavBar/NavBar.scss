@@ -1,14 +1,5 @@
-$layout-min-width: 800px;
-
-.navbar-anchor {
-  color: white;
-
-  &:hover {
-    color: wheat;
-  }
-}
+@import '../../styles/mixins';
 
 .navbar-layout {
-  width: $layout-min-width;
-  margin: 0 auto;
+  @include layout;
 }
