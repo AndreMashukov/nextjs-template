@@ -2,6 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import './Home.scss';
 import { Card, CardContent, Typography, CardActions, Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+
+withStyles(({ palette }) => ({
+  root: {
+    backgroundColor: palette.background.default,
+    color: palette.primary.main
+  }
+}));
 
 const useStyles = makeStyles({
   root: {
