@@ -4,6 +4,8 @@ import { withStyles, createStyles } from '@material-ui/core/styles';
 import './Layout.scss';
 
 interface Props {
+  // tslint:disable-next-line: no-any
+  children: any;
   classes: {
     root: string;
   };
