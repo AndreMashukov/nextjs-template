@@ -3,7 +3,7 @@ import App from 'next/app';
 import AppComponentProps from 'next/app';
 import withMaterial, { MaterialAppComponentProps } from '../theme/withMaterial';
 import Store from '../store/Store';
-import { NavBar } from '../shared';
+import { NavBar } from '../components';
 
 interface Props extends AppComponentProps, MaterialAppComponentProps {}
 
