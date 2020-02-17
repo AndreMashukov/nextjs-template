@@ -6,7 +6,6 @@ import { Card, CardContent, Typography, CardActions, Button } from '@material-ui
 const useStyles = makeStyles({
   root: {
     display: 'flex',
-    // height: '-20vh',
     justifyContent: 'flex-start',
     alignItems: 'center'
   },

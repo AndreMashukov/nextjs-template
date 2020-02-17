@@ -3,7 +3,7 @@ import App from 'next/app';
 import AppComponentProps from 'next/app';
 import withMaterial, { MaterialAppComponentProps } from '../theme/withMaterial';
 import Store from '../store/Store';
-import { NavBar } from '../components';
+import { NavBar, Footer } from '../components';
 
 interface Props extends AppComponentProps, MaterialAppComponentProps {}
 
@@ -15,6 +15,7 @@ class MyApp extends App<Props> {
       <Store>
         <NavBar />
         <Component pageContext={pageContext} {...pageProps} />
+        <Footer />
       </Store>
     );
   }
