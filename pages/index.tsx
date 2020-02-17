@@ -1,7 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import Store from '../store/Store';
-import { NavBar } from '../shared';
 
 const useStyles = makeStyles({
   root: {
@@ -31,9 +29,6 @@ export default () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Store>
-        <NavBar/>
-      </Store>
     </div>
   );
 };
