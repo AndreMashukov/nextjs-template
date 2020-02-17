@@ -1,15 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import './Home.scss';
-import { Card, CardContent, Typography, CardActions, Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { Card, CardContent, Typography, CardActions, Button, Theme } from '@material-ui/core';
+import { withStyles, createStyles } from '@material-ui/core/styles';
 
-withStyles(({ palette }) => ({
+const styles = ({ palette }: Theme) => createStyles({
   root: {
     backgroundColor: palette.background.default,
     color: palette.primary.main
   }
-}));
+});
 
 const useStyles = makeStyles({
   root: {
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   }
 });
 
-export const Home = () => {
+const HomeMain = () => {
   const classes = useStyles();
 
   return (
@@ -56,3 +56,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export const Home = withStyles(styles) (HomeMain);
