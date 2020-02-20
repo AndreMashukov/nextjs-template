@@ -15,7 +15,9 @@ export const Footer = () => {
 
   return (
     <div className={classes.stickToBottom}>
-      <BottomNavigation />
+      <BottomNavigation>
+        <p>Copyright &copy; 2020</p>
+      </BottomNavigation>
     </div>
   );
 };
