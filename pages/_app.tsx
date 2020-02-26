@@ -14,9 +14,9 @@ class MyApp extends App<Props> {
     return (
       <Store>
         <NavBar />
-          <Layout>
-            <Component pageContext={pageContext} {...pageProps} />
-          </Layout>
+        <Layout>
+          <Component pageContext={pageContext} {...pageProps} />
+        </Layout>
         <Footer />
       </Store>
     );
